@@ -14,7 +14,7 @@ pip install pillow : PLI 가 필수로 있어야 하니 설치
 
 3. ID_face_pic.py : ID 입력하고 내 사진들 찍기 (사진이 많으면 좋긴 하지만 시간이 어~~~~~~~~~~~~~~~~~~~ㅁ 청 오래 걸림...)
 4. train_img.py : 내 사진 갖고 학습 시작!!
-5. OPR_faceid.py,  : activate!!! 지금 버전은 로어락의 솔레노이드 작동용으로 만듦
+5. OPR_faceid.py, testfaceAD.py : activate!!! 지금 버전은 로어락의 솔레노이드 작동용으로 만듦, testfaceAD는 광고가 뜨게 바꾼버전
 
 
 # PS . 이거 말고 하고 이벤트가 있을 경우, OPR_faceid.py의 if (confidence < 100):
