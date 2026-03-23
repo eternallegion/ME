@@ -3,6 +3,7 @@
 실수로 6년전꺼 날려버림.....
 
 opencv packege install : git clone https://github.com/opencv/opencv.git 
+
 pip install pillow : PLI 가 필수로 있어야 하니 설치
 
 
