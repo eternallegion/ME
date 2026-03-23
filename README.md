@@ -7,6 +7,13 @@ opencv packege install : git clone https://github.com/opencv/opencv.git
 pip install pillow : PLI 가 필수로 있어야 하니 설치
 
 
+mkdir FacialRecognitionProject 햇갈림 방지용 작업 파일
+mkdir dataset 내사진(+id) 박제용
+
+mkdir trainer학습결과 저장용
+
+
+
 
 1. cam_test_webcam.py : 카메라 췍!
 2. face_filter.py : 필터(인식기)췎!!
@@ -27,3 +34,44 @@ if (100 - confidence) > 40:  이부분이 지금은 40%이상의 일치율일 �
 
 
 작동환경 : raspberry_pi3b+, Asus tinker_board, jetson_nano(약간 가공이 필요함)
+
+
+
+
+
+
+# Face recognition door lock (on the liver) 
+
+I accidentally blew my old one six years ago...
+
+opencv packege install : git clone https://github.com/opencv/opencv.git 
+
+pip install pillow : PLI must be installed
+
+
+mkdir FacialRecognitionProject Anti-Hack Job File
+mkdir dataset picture (+id) stuffed
+
+For storing mkdir trainer learning results
+
+
+
+
+1. cam_test_webcam.py : camera check!
+2. face_filter.py : filter!!
+
+#Let's start from here
+
+3. ID_face_pic.py : Enter ID and take my pictures (it's nice to have a lot of pictures, but it takes a long time...)
+4. train_img.py: Start learning with my picture!!
+5. OPR_faceid.py, testfaceAD.py : activate!!! The current version is made for lower lock's solenoid operation, testfaceAD is the version that the ad changed to float
+
+
+# PS. If (confidence < 100) in OPR_faceid.py:
+            name_id = names[id]
+            conf_label = "{0%".format(round(100 - confidence) ) Find and replace this part
+if (100 - confidence) > 40: This part is now operated at a match rate of 40% or higher
+You can change the matching rate to Mom! Dae.
+
+
+
