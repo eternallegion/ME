@@ -21,3 +21,8 @@ pip install pillow : PLI 가 필수로 있어야 하니 설치
             name_id = names[id]
             conf_label = "  {0}%".format(round(100 - confidence))  이부분을 찾아서 바꾸면됨
 if (100 - confidence) > 40:  이부분이 지금은 40%이상의 일치율일 때 작동되게 되있음
+일치율은 맘!대!로! 바꾸면 됩니다.
+
+
+
+작동환경 : raspberry_pi3b+, Asus tinker_board, jetson_nano(약간 가공이 필요함)
